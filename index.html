@@ -323,11 +323,6 @@
       border-radius: 3px;
     }
 
-    @media (max-width: 600px) {
-      .recap-grid {
-        grid-template-columns: 1fr;
-      }
-    }
 
     .photo-label {
       position: absolute;
@@ -529,10 +524,12 @@
       }
 
       .recap-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;   /* ← 1 column on mobile */
       }
 
-      .recap-photo:first-child { grid-row: span 1; aspect-ratio: 4/5; }
+      .recap-photo {
+        height: 260px;                /* ← shorter but not cut off */
+      }
 
       .divider-stat-row { gap: 2.5rem; }
     }
