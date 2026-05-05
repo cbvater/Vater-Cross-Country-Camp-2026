@@ -182,13 +182,13 @@
     section { position: relative; }
 
     .section-inner {
-      max-width: 860px;
+      max-width: 1000px;
       margin: 0 auto;
       padding: 5rem 2rem;
     }
 
     .section-label {
-      font-size: 0.72rem;
+      font-size: 1.3rem;
       letter-spacing: 0.3em;
       text-transform: uppercase;
       color: var(--amber);
@@ -210,7 +210,7 @@
     }
 
     p {
-      font-size: 1.05rem;
+      font-size: 1.3rem;
       line-height: 1.8;
       color: #4a3728;
       margin-bottom: 1.2rem;
@@ -219,11 +219,12 @@
     /* ── ABOUT ───────────────────────────────────────── */
     .about {
       background: #fff;
+
     }
 
     .about .section-inner {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1.15fr;
       gap: 4rem;
       align-items: start;
     }
@@ -232,6 +233,7 @@
 
     .about-highlights {
       padding-top: 0.5rem;
+      width: 100%;
     }
 
     .highlight-card {
@@ -243,14 +245,14 @@
 
     .highlight-card h4 {
       font-family: 'Bebas Neue', sans-serif;
-      font-size: 1.1rem;
+      font-size: 1.5rem;
       letter-spacing: 0.05em;
       color: var(--forest);
       margin-bottom: 0.25rem;
     }
 
     .highlight-card p {
-      font-size: 0.9rem;
+      font-size: 1.1rem;
       margin: 0;
       color: #5a4535;
     }
@@ -305,10 +307,7 @@
     }
 
     .recap-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.5rem;
-      margin-top: 2.5rem;
+      grid-template-columns: repeat(2, 1fr);
     }
 
     .recap-photo {
@@ -619,26 +618,26 @@
       </div>
 
       <!-- Photo grid — swap src="" with your actual photos -->
-      <div class="recap-grid reveal" style="transition-delay:0.1s">
 
-        <div class="recap-photo" style="background:#b5c4ba;">
+      <div class="recap-grid recap-grid--2col reveal" style="transition-delay:0.1s; border: 2px solid #b5c4ba; border-radius: 10px; padding: 10px;">
+        <div class="recap-photo" style="background:#b5c4ba; height: 400px; margin-bottom: 1rem;">
           <img src="20250805_182322_856.jpg" style="width:100%;height:100%;object-fit:cover;">
         </div>
 
-        <div class="recap-photo" style="background:#b5c4ba;">
+        <div class="recap-photo" style="background:#b5c4ba; height: 400px; margin-bottom: 1rem;">
           <img src="20250805_185849_217.jpg" style="width:100%;height:100%;object-fit:cover;">
         </div>
 
-        <div class="recap-photo" style="background:#b5c4ba;">
+        <div class="recap-photo" style="background:#b5c4ba; height: 400px; margin-bottom: 1rem;">
           <img src="PXL_20250806_233732080_Original.JPG" style="width:100%;height:100%;object-fit:cover;">
         </div>
 
-        <div class="recap-photo" style="background:#b5c4ba;">
+        <div class="recap-photo" style="background:#b5c4ba; height: 400px; margin-bottom: 1rem;">
           <img src="PXL_20250807_233346641_Original.JPG" style="width:100%;height:100%;object-fit:cover;">
         </div>
 
-
       </div>
+
     </div>
   </section>
 
